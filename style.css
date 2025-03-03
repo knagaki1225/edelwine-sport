@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+html{
+    background-image: url(img/背景.png);
+    font-family:"Sawarabi Mincho", serif;;
+}
+
+.flex {
+    display: flex;
+}
+
+/* ヘッダー */
+header{
+    width: 100%;
+    padding: 20px;
+}
+
+.header{
+    justify-content: space-between;
+}
+
+/* ヘッダー写真 */
+.header_img img{
+    margin: auto;
+    padding-top: 20px;
+}
+
+.header_nav{
+    margin-right: 40px;
+}
+
+.header_ul{
+    list-style: none;
+    margin: 0px;
+}
+
+.header_ul img{
+    margin-right: 30px;
+}
+
+.change_Language a, p{
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+}
+
+/* 最新情報 */
+.News img{
+    margin-top: 30px;
+    margin-left: auto;
+}
+
+/* 町紹介 */
+.Town_intro{
+    margin: 60px;
+}
+
+.town_intro_content{
+    position: absolute;
+    padding: 30px;
+}
+
+.town_intro_main img{
+    position: relative;
+    top: 90px;
+}
+
+.town_intro_main_1{
+
+}
+
+.town_intro_main_2{
+    margin-top: 45px;
+}
+
+.town_intro_main_3{
+    margin-top: 30px;
+}
+
+.town_intro_main_4{
+    margin-top: 50px;
+}
+
+.town_intro_main_4 p,a{
+    font-size: 22px;
+    text-decoration: none;
+
+}
+
+.font_color{
+    color: #63173B;
+}
+
+/* Youtube */
+.Youtube_main {
+    position: relative;
+    display: inline-block;
+    margin-top: 2%;
+    height: 700px;
+}
+
+.YouTube_img {
+    display: block;
+    height: auto;
+}
+
+.Youtube_link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 目的で探す */
+
+.Search_title{
+    justify-content: space-between;
+}
+
+.Search_title img{
+    margin: auto;
+}
+
+.Search_title p{
+    font-size: 35px;
+}
+
+.Search_main{
+    margin: 3%;
+    padding: 3%;
+    z-index: 2;
+    border: #B8A36C solid 1px;
+    background-color: white;
+}
+
+.Search_main div{
+    margin: 0.5%;
+}
+
+.Search_main p{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+/* 間の写真 */
+
+.Photo{
+    margin-top: 120px;
+}
+
+.Photo img{
+    width: 100%;
+    height: 200px;
+    margin-top: 40px;
+}
+
+/* フッター */
+
+
+/* 会社概要 */
+.company{
+    margin: 50px 200px 50px;
+    padding: 35px;
+    background-color: white;
+    border: #B8A36C solid 1px;
+    border-radius: 10px;
+}
+
+.company_title{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.company_table{
+    width: 120%;
+    margin: 25px 20px;
+}
+
+.company_table tr{
+    color: #868686;
+    margin-right: 30px;
+    font-size: 18px;
+}
+
+/* マップ */
+
+.MAP{
+    margin: 50px 200px 50px;
+    padding: 70px;
+    background-color: white;
+    border: #B8A36C solid 1px;
+    border-radius: 10px;
+}
+
+
+.MAP_title p{
+    font-size: 30px;
+}
+
+/* CONTACT */
+.contact{
+    margin: 200px 300px 50px;
+    padding: 70px;
+    border: #B8A36C solid 1px;
+}
+
+.contact_main{
+    text-align: center;
+}
