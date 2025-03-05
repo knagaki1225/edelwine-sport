@@ -45,9 +45,26 @@ header{
 }
 
 /* 最新情報 */
-.News img{
-    margin-top: 30px;
+.News{
     margin-left: auto;
+    margin-top: 50px;
+    width: 80%;
+    border: #B8A36C solid 1px;
+    background-color: white;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.News_tag{
+    width: 80%;
+}
+
+.News_title{
+    margin: 30px;
+}
+
+.News_title01{
+    margin-bottom: 20px;
 }
 
 /* 町紹介 */
