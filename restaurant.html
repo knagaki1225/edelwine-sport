@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./restaurant.css">
+    <title>TOPページ</title>
+</head>
+
+<body>
+
+    <!-- ヘッダー -->
+    <header>
+
+        <div class="flex header">
+
+            <div>
+                <img src="img/hambarger.png" alt="ハンバーガーボタン" width="30px">
+            </div>
+
+            <div class="flex" style="margin-right: 38px;">
+
+                <nav class="header_nav">
+                    <ul class="flex header_ul">
+                        <li><a href="#"><img src="img/インスタ.png" alt="インスタ" width="23px" height="24.5px"></a></li>
+                        <li><a href="#"><img src="img/x.png" alt="x" width="25px"></a></li>
+                        <li><a href="#"><img src="img/youtube.png" alt="youtube" width="27px"></a></li>
+                    </ul>
+                </nav>
+
+                <div class="change_Language">
+                    <p><a href="#">JP</a>　|　<a href="#">EN</a></p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="header_img">
+            <img src="img/ヘッダ―写真.png" width="100%">
+            <img src="img/線.png" alt="">
+        </div>
+
+    </header>
+
+    <main>
+        <!-- ここから書く -->
+        <!-- ３列メニュー -->
+        <h1 class="menu-title">メニュー</h1>
+        <div class="menu-container three-column">
+
+            <div class="menu-list-three">
+                <div class="menu-item-three">
+                    <img src="img/料理.png" alt="料理">
+                    <p>白金豚ソテー 和風ソース<br>￥1500円</p>
+                </div>
+                <div class="menu-item-three">
+                    <img src="img/料理.png" alt="料理">
+                    <p>ハンバーグ<br>(和風ソース or 洋風ソース)<br>￥1500円</p>
+                </div>
+                <div class="menu-item-three">
+                    <img src="img/料理.png" alt="料理">
+                    <p>ハンバーグチーズ<br>in トマトソース<br>￥1650円</p>
+                </div>
+                <div class="menu-item-three">
+                    <img src="img/料理.png" alt="料理">
+                    <p>チキンソテー 和風ソース<br>￥1400円</p>
+                </div>
+                <div class="menu-item-three">
+                    <img src="img/料理.png" alt="料理">
+                    <p>国産牛ロースステーキ<br>和風ソース<br>￥2800円</p>
+                </div>
+                <div class="menu-item-three">
+                    <img src="img/料理.png" alt="料理">
+                    <p>ラムステーキ<br>￥1800円</p>
+                </div>
+            </div>
+            <p class="note-three">※ライス、スープ、サラダ付き</p>
+        </div>
+
+        <!-- ２列メニュー -->
+        <div class="menu-container two-column">
+            <div class="menu-list-two">
+                <div class="menu-item-two">
+                    <img src="img/料理.png" alt="料理">
+                    <p>小海老と茸の黒カレー（中甘）<br>￥1450円</p>
+                </div>
+                <div class="menu-item-two">
+                    <img src="img/料理.png" alt="料理">
+                    <p>プラチナポークカツの黒カレー（中甘）<br>￥1600円</p>
+                </div>
+                <div class="menu-item-two">
+                    <img src="img/料理.png" alt="料理">
+                    <p>トマトベーコンパスタ<br>￥1100円</p>
+                </div>
+                <div class="menu-item-two">
+                    <img src="img/料理.png" alt="料理">
+                    <p>ナポリタンパッケッティ<br>￥950円</p>
+                </div>
+            </div>
+            <p class="note-two">※スープ、サラダ付き</p>
+            <div class="bottom-line-two"></div>
+            <div class="bottom-line-two"></div>
+        </div>
+
+        <!-- プルダウン -->
+        <div class="restaurant-menu-container">
+            <!-- ワインセクション -->
+            <div class="restaurant-menu-section">
+                <div class="restaurant-menu-header" onclick="toggleRestaurantMenu('wein-menu-content')">
+                    <div class="restaurant-menu-title">WEIN</div>
+                    <div class="restaurant-dropdown-arrow"></div>
+                </div>
+                <div id="wein-menu-content" class="restaurant-menu-content">
+                    <div class="restaurant-wine-item">
+                        <div class="restaurant-wine-name">辛口生ワイン(ナイアガラ) 白</div>
+                        <div class="restaurant-wine-description">北海道産ぶどうフレッシュ＆フルーティーな味わい心地の良い爽快な辛口</div>
+                        <div class="restaurant-price-info">
+                            <div class="restaurant-glass-price">グラス ￥500</div>
+                            <div class="restaurant-bottle-price">ボトル ￥2,600</div>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-wine-item">
+                        <div class="restaurant-wine-name">辛口エーデルワイン赤</div>
+                        <div class="restaurant-wine-description">岩手県産キャンベル使用</div>
+                        <div class="restaurant-price-info">
+                            <div class="restaurant-glass-price">グラス ￥500</div>
+                            <div class="restaurant-bottle-price">ボトル ￥2,600</div>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-wine-item">
+                        <div class="restaurant-wine-name">甘口エーデルワイン白</div>
+                        <div class="restaurant-wine-description">岩手県産ナイアガラ使用</div>
+                        <div class="restaurant-price-info">
+                            <div class="restaurant-glass-price">グラス ￥500</div>
+                            <div class="restaurant-bottle-price">ボトル ￥2,600</div>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-wine-item">
+                        <div class="restaurant-wine-name">やや辛口五月長根リースリングリオン白</div>
+                        <div class="restaurant-wine-description">爽やかな香りとさわりきりとした良い風味</div>
+                        <div class="restaurant-price-info">
+                            <div class="restaurant-glass-price">グラス ￥700</div>
+                            <div class="restaurant-bottle-price">ボトル ￥4,200</div>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-wine-item">
+                        <div class="restaurant-wine-name">辛口シルバーシャルドネ白</div>
+                        <div class="restaurant-wine-description">ほど良い酸味の柔らかな口当たりの辛口</div>
+                        <div class="restaurant-price-info">
+                            <div class="restaurant-glass-price">グラス ￥800</div>
+                            <div class="restaurant-bottle-price">ボトル ￥4,800</div>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-wine-item">
+                        <div class="restaurant-wine-name">ミディアムボディ シルバー大迫メルロー赤</div>
+                        <div class="restaurant-wine-description">ほど良い渋みのあるバランスのとれた味わい</div>
+                        <div class="restaurant-price-info">
+                            <div class="restaurant-glass-price">グラス ￥800</div>
+                            <div class="restaurant-bottle-price">ボトル ￥4,800</div>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-wine-item">
+                        <div class="restaurant-wine-name">ミディアムボディ シルバー ツヴァイゲルトレーベ赤</div>
+                        <div class="restaurant-wine-description">スパイシーな香り、しっかりとした上品タンニンと果実味</div>
+                        <div class="restaurant-price-info">
+                            <div class="restaurant-glass-price">グラス ￥800</div>
+                            <div class="restaurant-bottle-price">ボトル ￥4,800</div>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-wine-item">
+                        <div class="restaurant-wine-name">やや辛口五月長根リースリングリオン スパークリングワイン白</div>
+                        <div class="restaurant-wine-description">爽やかな香りとさわりきりとした良い風味</div>
+                        <div class="restaurant-price-info">
+                            <div class="restaurant-bottle-price">ボトル ￥4,800</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ドリンクセクション -->
+            <div class="restaurant-menu-section">
+                <div class="restaurant-menu-header" onclick="toggleRestaurantMenu('drink-menu-content')">
+                    <div class="restaurant-menu-title">DRINK</div>
+                    <div class="restaurant-dropdown-arrow"></div>
+                </div>
+                <div id="drink-menu-content" class="restaurant-menu-content">
+                    <div class="restaurant-drink-item">
+                        <div class="restaurant-drink-name">・生ビール中ジョッキ</div>
+                        <div class="restaurant-drink-price">￥600</div>
+                    </div>
+
+                    <div class="restaurant-drink-item">
+                        <div class="restaurant-drink-name">・アサヒドライゼロ</div>
+                        <div class="restaurant-drink-price">￥500</div>
+                    </div>
+
+                    <div class="restaurant-drink-item">
+                        <div class="restaurant-drink-name">・コーヒー</div>
+                        <div class="restaurant-drink-price">￥400</div>
+                    </div>
+
+                    <div class="restaurant-drink-item">
+                        <div class="restaurant-drink-name">・ウーロン茶、オレンジジュース、<br>　ジンジャーエール、コーラ</div>
+                        <div class="restaurant-drink-price">￥400</div>
+                    </div>
+
+                    <div class="restaurant-wine-glasses-icon">
+                        <!-- 画像は無視とのことなので、ここにはワイングラスのアイコンが入ります -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function toggleRestaurantMenu(menuId) {
+                const menu = document.getElementById(menuId);
+                menu.classList.toggle('restaurant-hidden');
+            }
+
+            // 初期表示時は両方のメニューを表示
+            document.addEventListener('DOMContentLoaded', function () {
+                // デフォルトでメニューを表示
+                document.getElementById('wein-menu-content').classList.remove('restaurant-hidden');
+                document.getElementById('drink-menu-content').classList.remove('restaurant-hidden');
+            });
+        </script>
+
+
+
+
+        <!-- 間の写真 -->
+        <div class="Photo">
+            <img src="img/背景01.png">
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="company">
+            <p class="company_title">◆ COMPANY</p>
+            <div class="company_main flex">
+                <img src="img/フッター/会社概要.png" width="40%">
+                <div style="margin: 20px;">
+                    <table class="company_table">
+                        <tr>
+                            <td>会社名</td>
+                            <td>株式会社エーデルワイン・サポート</td>
+                        </tr>
+                        <tr>
+                            <td>所在地</td>
+                            <td>〒028-3203<br>岩手県花巻市大迫町10-16-1</td>
+                        </tr>
+                        <tr>
+                            <td>TEL</td>
+                            <td>0198-48-2155</td>
+                        </tr>
+                        <tr>
+                            <td>FAX</td>
+                            <td>0198-48-4082</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="MAP flex">
+            <div class="MAP_main">
+                <div class="MAP_title flex">
+                    <img src="img/フッター/MAP.png" width="25%">
+                    <p>MAP</p>
+                </div>
+
+                <p>アクセスマップ</p>
+            </div>
+            <img src="img/フッター/マップ.png" width="70%">
+        </div>
+
+
+        <div class="contact">
+            <div class="contact_main">
+                <h2>CONTACT</h2>
+                <p>TEL　0198-48-2155　　FAX　0198-48-4082</p>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
