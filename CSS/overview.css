@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 body {
     font-family: "Sawarabi Mincho", serif;
     background-color: #f8f7f2;
@@ -8,7 +10,6 @@ body {
 
 .container {
     width: 80%;
-    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -17,7 +18,7 @@ h1 {
     color: #722f5d;
     text-align: center;
     font-size: 32px;
-    margin-bottom: 30px;
+    margin: 30px auto 10px;
     font-weight: normal;
 }
 
@@ -26,12 +27,8 @@ h1 {
     border-bottom: 1px solid #d9d0c3;
     height: 3px;
     margin: 20px 0 40px 0;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
 }
-
 
 .section {
     margin-bottom: 30px;
