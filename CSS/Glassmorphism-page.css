@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+/* 体験メニューとの高さ幅 */
+.custom-details {
+    margin-top: 5%;
+}
+
+/* 全体の幅設定 */
+.all-ul {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 3%;
+}
+
+.each-element {
+    margin-bottom: 3%;
+}
+
+/* 文字の縁取り */
+.font-Outline {
+    text-shadow: 0.5px 0.5px 0 #B8A36C, -0.5px -0.5px 0 #B8A36C,
+        -0.5px 0.5px 0 #B8A36C, 0.5px -0.5px 0 #B8A36C,
+        0px 0.5px 0 #B8A36C, 0-0.5px 0 #B8A36C,
+        -0.5px 0 0 #B8A36C, 0.5px 0 0 #FFF;
+}
+
+/* 折り畳み */
+.custom-summary {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 1.2em;
+    padding-bottom: 5px;
+    border-bottom: 6px solid #C4F6FA;
+    margin-left: 10%;
+}
+
+/* 大見出し */
+.blown-glass {
+    font-size: 40px;
+    margin-left: 0;
+    border: none;
+}
+
+/* 小見出し */
+.Glass-limited {
+    padding-top: 8px;
+    font-size: 22px;
+}
+
+/* ◆ 左端のひし形 */
+.custom-summary::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    bottom: -15px;
+    width: 25px;
+    height: 25px;
+    background-color: #C4F6FA;
+    transform: rotate(45deg);
+}
+
+/* 回転のスピードと▲の大きさ */
+.arrow {
+    font-size: 1.3em;
+    transition: transform 0.4s;
+}
+
+/* ▶を▼に回転 */
+.custom-details[open] .arrow {
+    transform: rotate(90deg);
+}
+
+/* 折り畳み内の線 */
+.custom-details ul {
+    width: 90%;
+    margin: 2% auto 0;
+    background: #fff;
+    border: 2px solid #B8A36C;
+}
+
+/* ul内の見出し */
+.Glass-experience-menu {
+    font-size: 20px;
+    padding-top: 1%;
+}
+
+/* 説明文 */
+.Glass-experience-menu-Dispense {
+    font-size: 18px;
+    padding: 2%;
+    width: 81%;
+}
+
+/* 制作時間から対象メニューの三つの要素 */
+.Glass-experience-Dispense {
+    margin-top: 3%;
+    font-size: 18px;
+}
+
+/* フォントサイズ */
+.Glass-experience-font {
+    font-size: 16px;
+}
+
+/* イメージの隙間 */
+.img-size {
+    margin-right: 15px;
+}
+
+/* 要素とイメージの区間 */
+.flex-start {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* 大見出しのダイヤの色を変える */
+#custom-summary-boder-bottom::before {
+    background-color: #FFCFB5;
+}
+
+/* 文字とコロンの隙間 */
+.label {
+    display: inline-block;
+    width: 6em;
+}
+
+/* 画像の大きさを画面の大きさにおおじて変える */
+@media (max-width: 1440px) {
+    img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1122px) {
+    img {
+        width: 80%;
+        margin-top: 10%;
+    }
+}
