@@ -1,0 +1,222 @@
+.menu-container {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+/* --- タイトルの２重線デザイン --- */
+.menu-title {
+  text-align: center;
+  position: relative;
+  font-size: 32px;
+  margin: 60px 0;
+}
+
+.menu-title::before,
+.menu-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30%;
+  border-top: 2px solid #b8a36c;
+  border-bottom: 2px solid #b8a36c;
+}
+
+.menu-title::before {
+  left: 0;
+}
+
+.menu-title::after {
+  right: 0;
+}
+
+/* --- ３列メニュー用 --- */
+.menu-list-three {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.menu-item-three {
+  width: calc((100% - 60px) / 3);
+  text-align: center;
+}
+
+.menu-item-three img {
+  width: 100%;
+  height: auto;
+}
+
+.note-three {
+  text-align: right;
+  margin-top: 20px;
+}
+
+/* --- ２列メニュー用 --- */
+.menu-list-two {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.menu-item-two {
+  width: calc((100% - 30px) / 2);
+  text-align: center;
+}
+
+.menu-item-two img {
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+}
+
+.note-two {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.bottom-line-two {
+  border-top: 2px solid #b8a36c;
+  margin-top: 30px;
+}
+
+/* --- レスポンシブ対応（スマホ用） --- */
+@media screen and (max-width: 768px) {
+  .menu-item-three,
+  .menu-item-two {
+    width: 100%; /* スマホでは１列に */
+  }
+
+  .menu-title::before,
+  .menu-title::after {
+    width: 15%; /* スマホ時は線を短く */
+  }
+}
+/* したのプルダウン */
+.restaurant-menu-container {
+  width: 90%; /* コンテナ幅を画面の90%に設定 */
+  max-width: 1200px; /* 最大幅を1200pxに設定 */
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.restaurant-menu-section {
+  margin-bottom: 30px;
+}
+
+.restaurant-menu-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.restaurant-menu-title {
+  color: #721037;
+  font-size: 32px; /* タイトルをさらに大きく */
+  font-weight: bold;
+  margin-right: 20px;
+  letter-spacing: 3px;
+  margin-left: 100px;
+}
+
+.restaurant-dropdown-arrow {
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 16px solid black;
+}
+
+.restaurant-menu-content {
+  background-color: #ffffff;
+  border: 2px solid #b8a36c; /* 枠線を太く */
+  padding: 40px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.restaurant-menu-content.restaurant-hidden {
+  display: none;
+}
+
+.restaurant-wine-item,
+.restaurant-drink-item {
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.restaurant-wine-item:last-child,
+.restaurant-drink-item:last-child {
+  margin-bottom: 0;
+}
+
+.restaurant-wine-name {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 24px; /* ワイン名をさらに大きく */
+}
+
+.restaurant-wine-description {
+  font-size: 18px; /* 説明文をさらに大きく */
+  margin-bottom: 15px;
+  padding-right: 200px; /* 価格との重なりを避けるために調整 */
+  line-height: 1.4;
+}
+
+.restaurant-price-info {
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: right;
+}
+
+.restaurant-glass-price,
+.restaurant-bottle-price {
+  font-size: 18px; /* 価格をさらに大きく */
+  white-space: nowrap;
+  margin-bottom: 5px;
+}
+.restaurant-bottle-price {
+  text-decoration: underline #b8a36c;
+  text-underline-offset: 10px;
+}
+
+.restaurant-drink-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.restaurant-drink-name {
+  font-size: 22px; /* ドリンク名をさらに大きく */
+  font-weight: bold;
+  margin-left: 80px;
+}
+
+.restaurant-drink-price {
+  font-size: 22px; /* ドリンク価格をさらに大きく */
+  text-decoration: underline #b8a36c;
+  text-underline-offset: 10px;
+  margin-right: 100px;
+}
+
+.restaurant-wine-glasses-icon {
+  text-align: right;
+  margin-top: 30px;
+}
+
+/* 長い商品名のための調整 */
+@media (max-width: 1000px) {
+  .restaurant-wine-description {
+    padding-right: 150px;
+  }
+
+  .restaurant-wine-name {
+    font-size: 22px;
+    padding-right: 150px;
+  }
+}
