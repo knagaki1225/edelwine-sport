@@ -98,7 +98,10 @@
     margin-top: 3%;
     font-size: 18px;
 }
-
+/* labelのflex */
+.label-flex{
+    display: flex;
+}
 /* フォントサイズ */
 .Glass-experience-font {
     font-size: 16px;
